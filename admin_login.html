@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceso Administrador — SmartTech Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-shell">
+
+    <div class="container" style="max-width: 440px;">
+        <div class="login-card">
+            <div class="text-center mb-4">
+                <i class="fa-solid fa-user-shield fs-1 mb-2" style="color:#2563eb;"></i>
+                <h3 class="fw-bold">Panel de Control</h3>
+                <p class="text-muted small mb-0">Ingresa tus credenciales de acceso autorizado</p>
+            </div>
+
+            <div id="alertContainer"></div>
+
+            <form id="formLoginAdmin" novalidate>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small">Usuario</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white text-muted"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" id="usuarioAdmin" class="form-control" placeholder="admin" required autofocus>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white text-muted"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="passAdmin" class="form-control" placeholder="Introduce la clave" required>
+                        <button class="btn btn-outline-secondary" type="button" id="btnTogglePassword">
+                            <i class="fa-solid fa-eye" id="toggleIcon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm mb-3" id="btnSubmit">
+                    <i class="fa-solid fa-right-to-bracket me-2"></i>Ingresar al Panel
+                </button>
+
+                <a href="index.html" class="btn btn-outline-secondary w-100 btn-sm">
+                    <i class="fa-solid fa-arrow-left me-2"></i>Volver a la Tienda
+                </a>
+            </form>
+
+            <div class="text-center mt-4 pt-3 border-top small text-muted">
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
